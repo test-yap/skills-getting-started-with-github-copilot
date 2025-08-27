@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (details.participants.length > 0) {
           participantsHTML = `
             <div class="participants-section">
-              <strong>Participants inscrits :</strong>
-              <ul class="participants-list">
+              <h5 id="participants-heading">Participants inscrits :</h5>
+              <ul class="participants-list" aria-labelledby="participants-heading">
                 ${details.participants.map(p => `<li>${p}</li>`).join("")}
               </ul>
             </div>
